@@ -1,0 +1,147 @@
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* HOMEPAGE */
+body {
+  width: 1300px;
+  background-color: white;
+  margin: 0 auto;
+}
+
+/* HEADER */
+.homepage-header {
+  width: 100%;
+  margin-bottom: 0;
+}
+.homepage-header .header-socialMedia {
+  width: 36%;
+  float: left;
+  margin-top: 50px;
+  margin-left: 37%;
+}
+.homepage-header .header-socialMedia a {
+  margin-right: 77px;
+}
+.homepage-header .header-socialMedia img {
+  width: 12%;
+  padding: 10px 10px;
+}
+.homepage-header .header-socialMedia img:hover {
+  background-color: #984343;
+  border-radius: 50px;
+}
+.homepage-header .header-topMenu p {
+  font-size: 35px;
+  font-family: "Gruppo", cursive;
+  margin-left: 15%;
+  margin-top: 57px;
+  float: left;
+}
+.homepage-header .header-topMenu a {
+  margin-left: 1%;
+  margin-top: 62px;
+  float: left;
+}
+
+/* WELCOME TEXT*/
+.homepage-welcomeText {
+  text-align: center;
+  margin-top: 70px;
+}
+.homepage-welcomeText h1 {
+  font-size: 200px;
+  font-family: "Lily Script One", cursive;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.homepage-welcomeText p {
+  font-size: 50px;
+  font-family: "Gruppo", cursive;
+  margin-top: -40px;
+  margin-bottom: 200px;
+}
+
+/* PERSONAL SECTIONS */
+.homepage-personalSections {
+  width: 89.23%;
+  margin: 0 auto;
+  margin-bottom: 700px;
+}
+.homepage-personalSections .personalSections-colum1 {
+  width: 51.8%;
+  float: left;
+}
+.homepage-personalSections .personalSections-colum2 {
+  width: 47%;
+  float: left;
+}
+.homepage-personalSections .box {
+  position: relative;
+  float: left;
+}
+.homepage-personalSections .box-problem {
+  margin-top: -4px;
+}
+.homepage-personalSections .box-text {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  font-family: "Gruppo", cursive;
+  text-align: center;
+  position: absolute;
+  display: none;
+  padding-top: 45px;
+  padding-bottom: 100px;
+}
+.homepage-personalSections .box-text p {
+  color: white;
+  font-size: 40px;
+}
+.homepage-personalSections .box-text a {
+  color: white;
+  background-color: #984343;
+  border-radius: 30px;
+  font-size: 27px;
+  text-decoration: none;
+  padding: 9px 20px;
+}
+.homepage-personalSections .box-text a:hover {
+  color: black;
+  background-color: white;
+}
+.homepage-personalSections .box:hover > .box-text {
+  display: block;
+}
+.homepage-personalSections .bigBox-text {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  font-family: "Gruppo", cursive;
+  text-align: center;
+  position: absolute;
+  display: none;
+  padding-top: 190px;
+  padding-bottom: 235px;
+}
+.homepage-personalSections .bigBox-text p {
+  color: white;
+  font-size: 40px;
+}
+.homepage-personalSections .bigBox-text a {
+  color: white;
+  background-color: #984343;
+  border-radius: 30px;
+  font-size: 27px;
+  text-decoration: none;
+  padding: 9px 20px;
+}
+.homepage-personalSections .bigBox-text a:hover {
+  color: black;
+  background-color: white;
+}
+.homepage-personalSections .box:hover > .bigBox-text {
+  display: block;
+}
+
+/*# sourceMappingURL=styles.css.map */
