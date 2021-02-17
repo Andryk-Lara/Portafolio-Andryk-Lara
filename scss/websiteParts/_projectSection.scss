@@ -1,0 +1,118 @@
+.portfolio-topMenu{
+    width: 100%;
+    float: right;
+    margin: 0 auto;
+    p{
+        font-size: 35px;
+        font-family: 'Gruppo', cursive;
+        margin-top: 57px;
+        margin-right: 1%;
+        float: right;
+    }
+    a{
+        margin-top: 62px;
+        margin-right: 5%;
+        float: right;
+    }
+}
+
+.portfolio-project{
+    width: 100%;
+    margin: 0 auto;
+}
+.project-image-left{
+    float: left;
+    position: relative;
+    margin-left: 70px;
+    div p{
+        color: white;
+        font-size: 40px;
+        font-family: 'Gruppo', cursive;
+        bottom: 0;
+        margin-left: 30px;
+        position: absolute;
+    }
+}
+.project-information-left{
+    float: left;
+    margin-bottom: 300px;
+    h2{
+        font-size: 65px;
+        font-family: 'Gruppo', cursive;
+        margin-left: 100px;
+        margin-top: 100px;
+    }
+    h3{
+        font-size: 30px;
+        font-family: 'Gruppo', cursive;
+        margin-left: 40%;
+        margin-top: 50px;
+    }
+    p{
+        font-size: 20px;
+        font-family: 'Gruppo', cursive;
+        margin-left: 46%;
+        margin-bottom: 50px;
+    }
+    a{
+        color: white;
+        background-color: #984343;
+        font-size: 30px;
+        font-family: 'Gruppo', cursive;
+        text-decoration: none;
+        border-radius: 50px;
+        margin-left: 37%;
+        padding: 10px 40px;
+    }
+    a:hover{
+        background-color: black;
+    }
+}
+.project-image-right{
+    float: right;
+    position: relative;
+    margin-right: 70px;
+    div p{
+        color: white;
+        font-size: 40px;
+        font-family: 'Gruppo', cursive;
+        bottom: 0;
+        margin-left: 30px;
+        position: absolute;
+    }
+}
+.project-information-right{
+    float: left;
+    margin-bottom: 300px;
+    h2{
+        font-size: 65px;
+        font-family: 'Gruppo', cursive;
+        margin-left: 160px;
+        margin-top: 100px;
+    }
+    h3{
+        font-size: 30px;
+        font-family: 'Gruppo', cursive;
+        margin-left: 47%;
+        margin-top: 50px;
+    }
+    p{
+        font-size: 20px;
+        font-family: 'Gruppo', cursive;
+        margin-left: 53%;
+        margin-bottom: 50px;
+    }
+    a{
+        color: white;
+        background-color: #984343;
+        font-size: 30px;
+        font-family: 'Gruppo', cursive;
+        text-decoration: none;
+        border-radius: 50px;
+        margin-left: 44%;
+        padding: 10px 40px;
+    }
+    a:hover{
+        background-color: black;
+    }
+}
