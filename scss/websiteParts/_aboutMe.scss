@@ -1,0 +1,111 @@
+body{
+    width: 1300px;
+}
+.about-me__top-menu{
+    width: 100%;
+    background-color: #984343;
+    float: right;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 100px;
+    padding-bottom:8px;
+    margin-top: 0;
+    padding-top: 0;
+    a{
+        color: white;
+        font-size: 35px;
+        font-family: 'Gruppo', cursive;
+        text-align: center;
+        text-decoration: none;
+        margin-top: 62px;
+        margin-bottom: 62px;
+        margin-left: 10%;
+        padding: 5px 20px;
+        border-radius: 100px;
+        float: left;
+    }
+    a:hover{
+        color: black;
+        background-color: white;
+    }
+}
+.about-me__personal-information{
+    .about-me__welcome{
+        h2{
+            font-family: 'Lily Script One', cursive;
+            font-size: 12.5rem;
+            margin-top: 0;
+            padding-top: 250px;
+            padding-bottom: 0px;
+            margin-bottom: 0;
+            text-align: center;
+        }
+
+    }
+}
+.about-me__personal-information__secondary{
+    width: 50%;
+    background-color: #984343;
+    color: white;
+    font-family: 'Gruppo', cursive;
+    margin-top: 0;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    border-radius: 50px;
+    float: left;
+    h3{
+        font-size: 2.5rem;
+        margin-top: 0;
+        margin-left: 8%;
+    }
+    p{
+        font-size: 1.8rem;
+        text-align: justify;
+        margin-left: 8%;
+        margin-right: 8%;
+    }
+}
+.about-me__personal-information__socialMedia{
+    text-align: center;
+    padding-top: 100px;
+    h3{
+        font-size: 2.5rem;
+        font-family: 'Gruppo', cursive;
+        text-align: center;
+        margin-left: 55%;
+    }
+    a{
+        margin-left: 50px;
+    }
+    img{
+        padding: 10px 10px;
+    }
+    img:hover{
+        background-color: #984343;
+        border-radius: 50px;
+    }
+}
+.about-me__portfolio-link{
+    font-family: 'Gruppo', cursive;
+    margin: 0 auto;
+    text-align: center;
+    width: 50%;
+    h3{
+        border-radius: 50px;
+        font-size: 2rem;
+        margin-top: 0;
+        margin-bottom: 200px;
+        padding: 10px 40px;
+        text-align: inherit;
+        text-decoration: underline;
+        a{
+            color: black;
+        }
+    }
+    h3:hover{
+        a{
+            color: #984343;
+        }
+    }
+
+}

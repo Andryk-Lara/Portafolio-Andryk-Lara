@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gruppo&display=swap");
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+@import '../scss/websiteParts/homepage';
+@import '../scss/websiteParts/projectSection';
+@import '../scss/websiteParts/aboutMe';
+@import '../scss/websiteParts/creativeStudio';
+@import '../scss/websiteParts/contact';
+@import '../scss/websiteParts/github';
+.user-position{
+    border: 3px solid #5a2424;
+}
