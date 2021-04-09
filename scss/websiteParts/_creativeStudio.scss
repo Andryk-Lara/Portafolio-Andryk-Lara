@@ -1,0 +1,109 @@
+.project-creative__top-menu{
+    width: 100%;
+    background-color: #984343;
+    float: right;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom:8px;
+    margin-top: 0;
+    padding-top: 0;
+    a{
+        color: white;
+        font-size: 35px;
+        font-family: 'Gruppo', cursive;
+        text-align: center;
+        text-decoration: none;
+        margin-top: 62px;
+        margin-bottom: 62px;
+        margin-left: 10%;
+        padding: 5px 20px;
+        border-radius: 100px;
+        float: left;
+    }
+    a:hover{
+        color: black;
+        background-color: white;
+    }
+}
+.project-creative__father{
+    width: 100%;
+}
+.project-creative__go-back{
+    color: black;
+    font-size: 30px;
+    text-decoration: none;
+    font-family: 'Gruppo', cursive;
+    font-weight: bold;
+    float: right;
+    margin-top: 20px;
+    margin-right: 0%;
+    margin-left: 68%;
+    margin-bottom: 100px;
+    padding: 10px 40px;
+    text-decoration: underline;
+}
+.project-creative__go-back:hover{
+    color: #984343;
+}
+.project-creative__go-back:active{
+    color: #5a2424;
+}
+.project-creative__project-information--left{
+    width: 50%;
+    font-family: 'Gruppo', cursive;
+    float: left;
+    margin-left: 5%;
+    h3{
+        margin-top: 0;
+        font-size: 2.5rem;
+    }
+    p{
+        font-size: 1.8rem;
+        text-align: justify;
+    }
+}
+.project-creative__project-information--right{
+    float: right;
+    font-family: 'Gruppo', cursive;
+    margin-right: 5%;
+    h4{
+        margin-top: 0;
+        font-size: 2rem;
+    }
+    p{
+        font-size: 1.3rem;
+    }
+}
+.project-creative__website-button{
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Gruppo', cursive;
+    margin-top: 100px;
+    margin-left: 70px;
+    margin-bottom: 150px;
+    a{
+        color: #984343;
+        border: 3px solid #984343;
+        border-radius: 50px;
+        font-size: 30px;
+        font-weight: bold;
+        margin-right: 70px;
+        text-decoration: none;
+        padding: 10px 40px;
+        
+    }
+    a:hover{
+        color: white;
+        background-color: #5a2424;
+    }
+    a:active{
+        background-color: black;
+    }
+}
+.project-creative__images{
+    margin: 0 auto;
+    img{
+        border-radius: 50px;
+        margin-bottom: 50px;
+    }
+}

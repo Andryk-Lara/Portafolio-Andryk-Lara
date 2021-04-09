@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gruppo&display=swap");
 .clearfix::after {
   content: "";
   clear: both;
@@ -15,6 +17,7 @@ body {
 .homepage-header {
   width: 100%;
   margin-bottom: 0;
+  /* MODAL */
 }
 .homepage-header .header-socialMedia {
   width: 36%;
@@ -33,17 +36,74 @@ body {
   background-color: #984343;
   border-radius: 50px;
 }
-.homepage-header .header-topMenu p {
+.homepage-header .header-topMenu .menu-paragraph {
   font-size: 35px;
   font-family: "Gruppo", cursive;
   margin-left: 12%;
   margin-top: 57px;
   float: left;
 }
-.homepage-header .header-topMenu a {
+.homepage-header .header-topMenu img {
   margin-left: 1%;
   margin-top: 62px;
   float: left;
+}
+.homepage-header #modal {
+  background: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  top: -100vh;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 100;
+  transition: all 0.5s;
+}
+.homepage-header #modal a {
+  text-decoration: none;
+}
+.homepage-header #modal p {
+  color: #fff;
+  width: 70%;
+  font-size: 50px;
+  font-family: "Gruppo", cursive;
+  line-height: 150px;
+  text-align: center;
+  position: relative;
+  left: 17%;
+  top: 20px;
+  margin: 0;
+}
+.homepage-header #modal p:hover {
+  color: #984343;
+}
+.homepage-header #modal p:active {
+  color: #5a2424;
+}
+.homepage-header #abrir-modal {
+  display: none;
+}
+.homepage-header #abrir-modal + label {
+  cursor: pointer;
+}
+.homepage-header #abrir-modal:checked ~ #modal {
+  top: 0;
+}
+.homepage-header #cerrar-modal {
+  display: none;
+}
+.homepage-header #cerrar-modal + label {
+  position: fixed;
+  top: 1em;
+  left: 1em;
+  z-index: 150;
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: "Gruppo", cursive;
+  cursor: pointer;
+}
+.homepage-header #cerrar-modal:checked ~ #modal {
+  top: -100vh;
 }
 
 /* WELCOME TEXT*/
@@ -146,20 +206,29 @@ body {
 
 .portfolio-topMenu {
   width: 100%;
+  background-color: #984343;
   float: right;
   margin: 0 auto;
-}
-.portfolio-topMenu p {
-  font-size: 35px;
-  font-family: "Gruppo", cursive;
-  margin-top: 57px;
-  margin-right: 1%;
-  float: right;
+  margin-left: 50%;
+  text-align: center;
+  margin-bottom: 100px;
+  padding-bottom: 70px;
 }
 .portfolio-topMenu a {
+  color: white;
+  font-size: 35px;
+  font-family: "Gruppo", cursive;
+  text-align: center;
+  text-decoration: none;
   margin-top: 62px;
-  margin-right: 5%;
-  float: right;
+  margin-left: 10%;
+  padding: 5px 20px;
+  border-radius: 100px;
+  float: left;
+}
+.portfolio-topMenu a:hover {
+  color: black;
+  background-color: white;
 }
 
 .portfolio-project {
@@ -173,12 +242,16 @@ body {
   margin-left: 70px;
 }
 .project-image-left div p {
-  color: white;
+  color: #fff;
   font-size: 40px;
   font-family: "Gruppo", cursive;
+  font-weight: bold;
   bottom: 0;
   margin-left: 30px;
   position: absolute;
+}
+.project-image-left img {
+  border-radius: 50px;
 }
 
 .project-information-left {
@@ -214,6 +287,9 @@ body {
   padding: 10px 40px;
 }
 .project-information-left a:hover {
+  background-color: #5a2424;
+}
+.project-information-left a:active {
   background-color: black;
 }
 
@@ -223,12 +299,16 @@ body {
   margin-right: 70px;
 }
 .project-image-right div p {
-  color: white;
+  color: #fff;
   font-size: 40px;
   font-family: "Gruppo", cursive;
+  font-weight: bold;
   bottom: 0;
   margin-left: 30px;
   position: absolute;
+}
+.project-image-right img {
+  border-radius: 50px;
 }
 
 .project-information-right {
@@ -264,31 +344,362 @@ body {
   padding: 10px 40px;
 }
 .project-information-right a:hover {
+  background-color: #5a2424;
+}
+.project-information-right a:active {
   background-color: black;
 }
 
-.aboutMe-banner {
-  position: relative;
-}
-.aboutMe-banner img {
-  width: 100%;
-}
-.aboutMe-banner h2 {
-  color: white;
-  font-size: 70px;
-  font-family: "Gruppo", cursive;
-  position: absolute;
-  left: 150px;
-  bottom: 50px;
+body {
+  width: 1300px;
 }
 
-.personalInformation-secondary h3 {
+.about-me__top-menu {
+  width: 100%;
+  background-color: #984343;
+  float: right;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 100px;
+  padding-bottom: 8px;
+  margin-top: 0;
+  padding-top: 0;
+}
+.about-me__top-menu a {
+  color: white;
+  font-size: 35px;
+  font-family: "Gruppo", cursive;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 62px;
+  margin-bottom: 62px;
+  margin-left: 10%;
+  padding: 5px 20px;
+  border-radius: 100px;
+  float: left;
+}
+.about-me__top-menu a:hover {
+  color: black;
+  background-color: white;
+}
+
+.about-me__personal-information .about-me__welcome h2 {
+  font-family: "Lily Script One", cursive;
+  font-size: 12.5rem;
+  margin-top: 0;
+  padding-top: 250px;
+  padding-bottom: 0px;
+  margin-bottom: 0;
   text-align: center;
 }
-.personalInformation-secondary p {
+
+.about-me__personal-information__secondary {
+  width: 50%;
+  background-color: #984343;
+  color: white;
+  font-family: "Gruppo", cursive;
+  margin-top: 0;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  border-radius: 50px;
+  float: left;
+}
+.about-me__personal-information__secondary h3 {
+  font-size: 2.5rem;
+  margin-top: 0;
+  margin-left: 8%;
+}
+.about-me__personal-information__secondary p {
+  font-size: 1.8rem;
   text-align: justify;
-  margin-left: 20%;
-  margin-right: 20%;
+  margin-left: 8%;
+  margin-right: 8%;
+}
+
+.about-me__personal-information__socialMedia {
+  text-align: center;
+  padding-top: 100px;
+}
+.about-me__personal-information__socialMedia h3 {
+  font-size: 2.5rem;
+  font-family: "Gruppo", cursive;
+  text-align: center;
+  margin-left: 55%;
+}
+.about-me__personal-information__socialMedia a {
+  margin-left: 50px;
+}
+.about-me__personal-information__socialMedia img {
+  padding: 10px 10px;
+}
+.about-me__personal-information__socialMedia img:hover {
+  background-color: #984343;
+  border-radius: 50px;
+}
+
+.about-me__portfolio-link {
+  font-family: "Gruppo", cursive;
+  margin: 0 auto;
+  text-align: center;
+  width: 50%;
+}
+.about-me__portfolio-link h3 {
+  border-radius: 50px;
+  font-size: 2rem;
+  margin-top: 0;
+  margin-bottom: 200px;
+  padding: 10px 40px;
+  text-align: inherit;
+  text-decoration: underline;
+}
+.about-me__portfolio-link h3 a {
+  color: black;
+}
+.about-me__portfolio-link h3:hover a {
+  color: #984343;
+}
+
+.project-creative__top-menu {
+  width: 100%;
+  background-color: #984343;
+  float: right;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 8px;
+  margin-top: 0;
+  padding-top: 0;
+}
+.project-creative__top-menu a {
+  color: white;
+  font-size: 35px;
+  font-family: "Gruppo", cursive;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 62px;
+  margin-bottom: 62px;
+  margin-left: 10%;
+  padding: 5px 20px;
+  border-radius: 100px;
+  float: left;
+}
+.project-creative__top-menu a:hover {
+  color: black;
+  background-color: white;
+}
+
+.project-creative__father {
+  width: 100%;
+}
+
+.project-creative__go-back {
+  color: black;
+  font-size: 30px;
+  text-decoration: none;
+  font-family: "Gruppo", cursive;
+  font-weight: bold;
+  float: right;
+  margin-top: 20px;
+  margin-right: 0%;
+  margin-left: 68%;
+  margin-bottom: 100px;
+  padding: 10px 40px;
+  text-decoration: underline;
+}
+
+.project-creative__go-back:hover {
+  color: #984343;
+}
+
+.project-creative__go-back:active {
+  color: #5a2424;
+}
+
+.project-creative__project-information--left {
+  width: 50%;
+  font-family: "Gruppo", cursive;
+  float: left;
+  margin-left: 5%;
+}
+.project-creative__project-information--left h3 {
+  margin-top: 0;
+  font-size: 2.5rem;
+}
+.project-creative__project-information--left p {
+  font-size: 1.8rem;
+  text-align: justify;
+}
+
+.project-creative__project-information--right {
+  float: right;
+  font-family: "Gruppo", cursive;
+  margin-right: 5%;
+}
+.project-creative__project-information--right h4 {
+  margin-top: 0;
+  font-size: 2rem;
+}
+.project-creative__project-information--right p {
+  font-size: 1.3rem;
+}
+
+.project-creative__website-button {
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Gruppo", cursive;
+  margin-top: 100px;
+  margin-left: 70px;
+  margin-bottom: 150px;
+}
+.project-creative__website-button a {
+  color: #984343;
+  border: 3px solid #984343;
+  border-radius: 50px;
+  font-size: 30px;
+  font-weight: bold;
+  margin-right: 70px;
+  text-decoration: none;
+  padding: 10px 40px;
+}
+.project-creative__website-button a:hover {
+  color: white;
+  background-color: #5a2424;
+}
+.project-creative__website-button a:active {
+  background-color: black;
+}
+
+.project-creative__images {
+  margin: 0 auto;
+}
+.project-creative__images img {
+  border-radius: 50px;
+  margin-bottom: 50px;
+}
+
+.contact__top-menu {
+  width: 100%;
+  background-color: #984343;
+  float: right;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 8px;
+  margin-top: 0;
+  padding-top: 0;
+}
+.contact__top-menu a {
+  color: white;
+  font-size: 35px;
+  font-family: "Gruppo", cursive;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 62px;
+  margin-bottom: 62px;
+  margin-left: 10%;
+  padding: 5px 20px;
+  border-radius: 100px;
+  float: left;
+}
+.contact__top-menu a:hover {
+  color: black;
+  background-color: white;
+}
+
+.contact__image {
+  float: left;
+}
+
+.form-contact {
+  background-color: #984343;
+  float: left;
+  margin-top: 70px;
+  margin-left: 5%;
+  padding: 40px 50px;
+  width: 25%;
+}
+.form-contact .line label {
+  color: #fff;
+  font-family: "Gruppo", cursive;
+  font-size: 1.7rem;
+  margin-bottom: 20px;
+  float: left;
+  width: 100%;
+}
+.form-contact .line input {
+  font-family: "Gruppo", cursive;
+  font-size: 1.7rem;
+  margin-bottom: 20px;
+}
+.form-contact button {
+  font-size: 1.5rem;
+  font-family: "Gruppo", cursive;
+  float: right;
+  margin-top: 36px;
+  padding: 10px 40px;
+}
+
+.github__top-menu {
+  width: 100%;
+  background-color: #984343;
+  float: right;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 8px;
+  margin-top: 0;
+  padding-top: 0;
+}
+.github__top-menu a {
+  color: white;
+  font-size: 35px;
+  font-family: "Gruppo", cursive;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 62px;
+  margin-bottom: 62px;
+  margin-left: 10%;
+  padding: 5px 20px;
+  border-radius: 100px;
+  float: left;
+}
+.github__top-menu a:hover {
+  color: black;
+  background-color: white;
+}
+
+.github__title {
+  font-size: 2.5rem;
+  font-family: "Gruppo", cursive;
+  margin-right: 150px;
+  margin-top: 220px;
+  float: right;
+}
+
+.github__box-project {
+  background-color: #5a2424;
+  border-radius: 50px;
+  border: 3px solid #5a2424;
+  font-family: "Gruppo", cursive;
+  font-size: 1.7rem;
+  float: left;
+  margin-top: 70px;
+  margin-left: 10%;
+  padding: 20px 50px;
+  transition: width 2s;
+  text-align: center;
+  width: 300px;
+}
+.github__box-project a {
+  color: white;
+  padding: 10px 50px;
+  text-decoration: none;
+}
+
+.github__box-project:hover {
+  border: 3px solid gray;
+  width: 400px;
+}
+
+.user-position {
+  border: 3px solid #5a2424;
 }
 
 /*# sourceMappingURL=styles.css.map */
